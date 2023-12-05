@@ -1,0 +1,574 @@
+
+body{
+    
+    background-color: #f5f5f5;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+:root{
+    --padding-top:50px ;
+    --main-color:#0078ff;
+}
+/* nav section  */
+nav{
+    background-color: rgba(0, 0, 0, 0.804);
+}
+nav .nav-item ul li a{
+    position: relative;
+}
+
+nav .nav-item a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: white;
+   bottom: 0;
+/* transform: translate(-30%); */
+  transition: all 0.5s;
+}
+nav .nav-item a:hover::after{
+width: 30px;
+}
+
+
+
+
+
+
+
+
+/* home section  */
+
+.home{
+    background-image: url("../images/hero-bg\ \(1\).jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.home .layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.532);
+}
+.home .content{
+    color: white;  
+    z-index: 3;
+}
+.home .content h1{
+    font-weight: 600;
+    font-size: 70px;
+    position: relative;
+}
+
+.home .content h1::after{
+    content: "|";
+    position: absolute;
+    font-size:40px;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    animation-name: typing;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing{
+    1%{content: "D|";}
+    2%{content: "De|";}
+    3%{content: "Dev|";}
+    4%{content: "Deve|";}
+    5%{content: "Devel|";}
+    6%{content: "Develo|";}
+    7%{content: "Develop|";}
+    8%{content: "Develope|";}
+    9%{content: "Developer|";}
+    10%{content: "Developer |";}
+    11%{content: "Develope|";}
+    12%{content: "Develop|";}
+    13%{content: "Develo|";}
+    14%{content: "Devel|";}
+    15%{content: "Deve|";}
+    16%{content: "Dev|";}
+    17%{content: "De|";}
+    18%{content: "D|";}
+    19%{content: "F|";}
+    20%{content: "Fr|";}
+    21%{content: "Fre|";}
+    22%{content: "Free|";}
+    23%{content: "Freel|";}
+    24%{content: "Freela|";}
+    25%{content: "Freelan|";}
+    26%{content: "Freelanc|";}
+    27%{content: "Freelance|";}
+    28%{content: "Freelancer|";}
+    29%{content: "Freelancer |";}
+    30%{content: "Freelance|";}
+    31%{content: "Freelanc|";}
+    32%{content: "Freelan|";}
+    33%{content: "Freela|";}
+    34%{content: "Freel|";}
+    35%{content: "Free|";}
+    36%{content: "Fre|";}
+    37%{content: "Fr|";}
+    38%{content: "F|";}
+    39%{content: "P";}
+    40%{content: "Ph";}
+    41%{content: "Pho";}
+    42%{content: "Phot";}
+    43%{content: "Photo";}
+    44%{content: "Photog";}
+    45%{content: "Photogr";}
+    46%{content: "Photogra";}
+    47%{content: "Photograg";}
+    48%{content: "Photogragr";}
+    49%{content: "Photogragra";}
+    50%{content: "Photogragrap";}
+    51%{content: "Photogragraph";}
+    52%{content: "Photogragraphe";}
+    53%{content: "Photogragrapher";}
+    54%{content: "Photogragraphe";}
+    55%{content: "Photogragraph";}
+    56%{content: "Photogragrap";}
+    57%{content: "Photogragra";}
+    58%{content: "Photogragr";}
+    59%{content: "Photograg";}
+    60%{content: "Photogra";}
+    61%{content: "Photogr";}
+    62%{content: "Photog";}
+    63%{content: "Photo";}
+    64%{content: "Pho";}
+    65%{content: "Ph";}
+    66%{content: "P";}
+    67%{content: "D";}
+    68%{content: "De";}
+    69%{content: "De";}
+    71%{content: "Des";}
+    72%{content: "Dei";}
+    74%{content: "Desig";}
+    76%{content: "Design";}
+    78%{content: "Designe";}
+    80%{content: "Designer";}
+    83%{content: "Designe";}
+    85%{content: "Design";}
+    90%{content: "Desig";}
+    92%{content: "Dei";}
+    94%{content: "De";}
+    100%{content: "D";}
+
+
+
+}
+
+
+
+/* end home section  */
+
+   /* about section  */
+#about li span{
+    color: #1e1e1e;
+    font-size: 17.6;
+    font-weight: 600;
+    padding-right: 5px;
+
+}
+#about li{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4e4e4e;
+    line-height: 38px;
+}
+ #about .skill-p{
+font-weight: 600;
+    color: #1e1e1e;
+    font-size: 17.6;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 15px;
+  
+}
+h5{
+    font-size: 32px;
+    font-weight: 500;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+  padding-bottom: 40px;
+}
+
+#about h5::after{
+content: "";
+width: 95px;
+height: 3px;
+background-color: rgb(74, 74, 220);
+position: absolute;
+top: 48px;
+left: 0px;
+
+}
+
+#about p{
+ 
+    font-size: 21px;
+    font-weight: 300;
+    color: #4e4e4e;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#about .ratioo{
+font-size: 16px;
+font-weight:400 ;
+}
+
+.h-progress{
+    height: 13px;
+}
+
+/* End about section */
+
+/* service section */
+.service .content:hover .iconCircle{
+background-color: var(--main-color);
+border: 10px solid rgba(185, 236, 245, 0.937);
+
+}
+.service .content:hover .iconCircle i{
+    color: white;
+}
+
+.service .row .iconCircle{
+     width: 120px;
+     height: 120px;
+     border: 10px solid var(--main-color);
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+.service .row .iconCircle i{
+font-size: 40px;
+color: #1e1e1e;
+}
+
+.service .row h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    color: #1e1e1e;
+    margin-bottom: 16px;
+}
+.service .row p{
+    color: #4e4e4e;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* End service section */
+
+/* counter section  */
+.counter{
+    background-image: url("../images/counters-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;  
+    position: relative;
+}
+.layer1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+   right: 0;
+   left: 0;
+    background-color: #0077ffb5;
+}
+
+.counter .textsize{
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.counter .icon{
+    width: 78px;
+    height: 78px;
+    border: 9px solid rgb(223, 220, 220);
+    border-radius: 50%;
+}
+.counter .icon i{
+  font-size: 20px;
+
+}
+
+/*end counter section  */
+
+/* portfolio section  */
+ .title-portfolio h3{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ .title-portfolio p{
+color: #4e4e4e;
+position: relative;
+margin-bottom: 80px;
+}
+ .title-portfolio p::after{
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    top: 40px;
+    right: 47%;
+}
+.portfolio .card h2{
+font-size: 20px;
+font-weight: 500;
+
+}
+.portfolio .card .color-span{
+    color: #0078ff;
+    font-size: 14px;
+
+}
+.portfolio .card .font-span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #4e4e4e;
+}
+.portfolio .card .icon-portfolio{
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 8px;
+    border: 3px solid rgb(7, 137, 230);
+    border-radius: 50%;
+}
+#portfolio .container img{
+    transition: all 1s;
+}
+#portfolio .container .card:hover img{
+    transform: scale(1.2);
+     
+}
+
+
+/*End portfolio section  */
+
+
+/**********silder section ***********/
+
+.silider{
+    background-image: url("../images/overlay-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;  
+    position: relative;
+    padding: 140px;
+}
+.silider .layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+   right: 0;
+   left: 0;
+    background-color: #0077ffb5;
+}
+
+
+.carousel-item img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target] {
+width: 13px;
+height: 13px;
+border-radius: 50%;
+margin-top: 300px;
+
+}
+.carousel-inner{
+   padding-bottom: 50px;
+ 
+}
+/********** End silder section ************/
+
+/************* blog section************/
+
+#blog{
+    padding-top: var(--padding-top);
+}
+
+
+
+.a-blog{
+    font-size: 22px;
+    font-weight: 500;
+    color: #1e1e1e;
+    text-decoration: none;
+    
+}
+.p-blog{
+    color: #4e4e4e;
+    position: relative;
+}
+.p-blog::after{
+    content: "";
+    width: 110%;
+    height: 1px;
+    background-color: #b6b3b3;
+    position: absolute;
+    bottom: -30px;
+    left: -15px;
+}
+
+.img-blog{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.a-p-blog{
+    text-decoration: none;
+    color: #1e1e1e;
+    text-transform: capitalize;
+}
+ #blog i{
+    color: #828282;
+  
+}
+#blog .p-icon{
+    color: #828282;
+}
+#blog .img-large-blog{
+position: relative;
+cursor: pointer;
+}
+
+#blog h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+   padding: 8px 15px;
+    
+    background-color: #0078ff;
+text-transform: uppercase;
+border-radius: 3px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%);
+}
+
+
+
+/************* End blog section************/
+
+
+/************* contact section************/
+.contact{
+    background-image: url("../images/overlay-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  overflow: hidden;
+  z-index: -2;
+  padding-top: 30px;
+}
+
+.contact .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0077ffb5;
+    z-index: -1;
+} 
+.contact .margint{
+    margin-top: 100px;
+}
+.contact h5{
+    position: relative;
+}
+.contact h5::after{
+    content: "";
+ width: 18%;
+ height: 3px;
+ background-color: var(--main-color);
+ position: absolute;
+ bottom: 25px;
+ left: 0;
+}
+
+.contact p{
+    font-size: 22px;
+    font-weight: 300;
+    color: #4e4e4e;
+}
+
+.contact ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+.contact ul li{
+    font-size: 16px;
+    color: #4e4e4e;
+}
+ .contact .social-icon a{
+    color: black;
+    font-size: 23px;
+}
+.contact .social-icon .icon{
+    width: 45px;
+    height: 45px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+}
+.contact .social-icon .icon:hover{
+    background-color: var(--main-color);
+    border: 3px solid rgb(206, 224, 242);
+}
+.contact .social-icon .icon:hover i{
+    color: white;
+
+}
+
+.contact button:hover{
+    background-color:#0a57caa5 ;
+    box-shadow: 10px 10px 10px black;
+}
+
+/************* End contact section************/
+
+
+/*************  footer section************/
+.footer{
+    padding-block: 20px;
+    color: white;
+    text-align: center;
+    background-color: #0062d3;
+}
+.footer span .span{
+    font-size: 18px;
+    font-weight: 600;
+   
+}
+.footer i{
+     font-size: 13px;
+    
+}
+
+
+/************* End footer section************/
